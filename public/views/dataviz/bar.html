@@ -1,0 +1,7 @@
+<div ng-include src="'views/partials/navbar.html'"></div>
+<div ng-controller="dataVizController" class="row">
+	<h2>Bar chart</h2>
+
+	  <chart-form></chart-form>
+    <bar-chart height="options.height" width="options.width" data="data" hovered="hovered(args)" title="Bar chart"></bar-chart>
+</div>

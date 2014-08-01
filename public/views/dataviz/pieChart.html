@@ -1,0 +1,7 @@
+<div ng-include src="'views/partials/navbar.html'"></div>
+<div ng-controller="pieChartController" class="row">
+	<h2>Pie chart</h2>
+		
+		<chart-form></chart-form>
+    <pie-chart height="options.height" width="options.width" title="pie chart" radius="40" data="data" margin="options.margin"></pie-chart>
+</div>

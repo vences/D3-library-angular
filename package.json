@@ -1,0 +1,28 @@
+{
+  "name": "D3-library-angular",
+  "version": "0.0.0",
+  "description": "Create a library D3 integrated in angular.js",
+  "main": "server.js",
+  "dependencies": {
+    "hapi": "^6.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vences/D3-library-angular.git"
+  },
+  "keywords": [
+    "D3",
+    "angular"
+  ],
+  "author": "Venceslas Devillard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vences/D3-library-angular/issues"
+  },
+  "homepage": "https://github.com/vences/D3-library-angular"
+}

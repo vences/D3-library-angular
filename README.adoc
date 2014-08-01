@@ -1,0 +1,56 @@
+= readme
+Venceslas Devillard <venceslas.devillard@gmail.com>
+:toc:
+:icons: font
+
+== Intro
+
+This library permit you to integrate chart in your angular app via directives.
+This library use :
+
+- D3.js 
+
+== Install Demo mode
+
+To execute the demo mode :
+[source]
+----
+$ npm install
+$ npm start
+----
+
+== Integration in your angular application
+
+To integrate this library in your angular app :
+
+. copy all directives inside the directory `public/scripts/directives` in your angular directives directory
+. change the name of your angular app in all the directives `angular.module('app')` (first ligne of the file)
+. copy `public/scripts/lib/dataviz/d3.js` from https://github.com/mbostock/d3[D3 gitHub] to your js directory
+. copy from `public/scripts/lib/dataviz/library/reusable_chart.js` to your js directory
+
+Now you can use the directive. For this go to Documentation section
+
+== Documentation
+
+=== New HTML Tag
+
+The new HTML tag create is named directives in angular (for more documentation go to https://docs.angularjs.org/guide/directive).
+The new HTML tag are :
+
+- `<area-chart>`
+- `<bar-chart>`
+- `<box-plot-chart>`
+- `<box-plot-man-chart>`
+- `<chart-form-chart>`
+- `<line-chart>`
+- `<pie-chart>`
+- `<plot-chart>`
+
+== Todo
+
+- improve documentation : add details on the parameter receive by directives
+- correct some bugs (e.g : the chart are not destroy when you navigate in the pages)
+- integrate event inside this library
+- integrate multiple plots on the same chart
+- integrate more control parameterizable
+- add zoom and use http://square.github.io/crossfilter/[crossfilter] exploring large multivariate
