@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 library angular</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/dataviz/dataviz.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/general.css"/>
+  </head>
+
+  <body ng-app="app">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div ng-view></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="scripts/lib/angular.min.js"></script>
+    <script src="scripts/lib/angular-animate.min.js"></script>
+    <script src="scripts/lib/underscore-min.js"></script>
+    <script src="scripts/lib/angular-route.min.js"></script>
+    <script src="scripts/lib/jquery-1.11.1.min.js"></script>
+    <script src="scripts/lib/ui-bootstrap-tpls-0.12.0-SNAPSHOT.min.js"></script>
+
+    <script src="scripts/lib/dataviz/crossfilter.js"></script>
+    <script src="scripts/lib/dataviz/d3.min.js"></script>
+    <script src="scripts/lib/dataviz/library/reusable_chart.js"></script>
+
+    <!-- Our scripts -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/index.js"></script>
+    <script src="scripts/controllers/boxPlot.js"></script>
+    <script src="scripts/controllers/boxPlotMan.js"></script>
+    <script src="scripts/controllers/pieChart.js"></script>
+    <script src="scripts/controllers/lineChart.js"></script>
+
+    <script src="scripts/directives/bar-chart.js"></script>
+    <script src="scripts/directives/plot-chart.js"></script>
+    <script src="scripts/directives/chart-form.js"></script>
+    <script src="scripts/directives/boxPlot-chart.js"></script>
+    <script src="scripts/directives/boxPlotMan-chart.js"></script>
+    <script src="scripts/directives/pie-chart.js"></script>
+    <script src="scripts/directives/line-chart.js"></script>
+    <script src="scripts/directives/area-chart.js"></script>
+  </body>
+</html>

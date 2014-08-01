@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="form">
+		<div class="form-group">
+			<label>Height: {{options.height}}</label>
+			<input type="range" ng-model="options.height" min="100" max="800"/>
+		</div>
+		<div class="form-group">
+			<label>Width: {{options.width}}</label>
+			<input type="range" ng-model="options.width" min="100" max="800"/>
+		</div>
+			<button ng-click="update()" class="btn btn-default">Update Data</button>
+	</div>
+	<p>Hovered bar data: {{barValue}}</p>
+</div>

@@ -1,0 +1,8 @@
+<div ng-include src="'views/partials/navbar.html'"></div>
+<div ng-controller="dataVizController" class="row">
+	<h2>Plot chart</h2>
+
+	  <chart-form></chart-form>
+
+    <plot-chart height="options.height" width="options.width" data="data" title="Plot chart"></plot-chart>
+</div>

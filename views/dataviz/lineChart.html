@@ -1,0 +1,8 @@
+<div ng-include src="'views/partials/navbar.html'"></div>
+<div ng-controller="lineChartController" class="row">
+	<h2>Line chart</h2>
+
+	  <chart-form></chart-form>
+    <line-chart height="options.height" width="options.width" data="data" hovered="hovered(args)" title="Line chart"></line-chart>
+    <area-chart height="options.height" width="options.width" data="data" hovered="hovered(args)" title="Line chart"></area-chart>
+</div>
