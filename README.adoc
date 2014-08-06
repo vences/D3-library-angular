@@ -19,6 +19,8 @@ $ npm install
 $ npm start
 ----
 
+A demonstration is available http://vences.github.io/D3-library-angular/#/index[here]
+
 == Integration in your angular application
 
 To integrate this library in your angular app :
