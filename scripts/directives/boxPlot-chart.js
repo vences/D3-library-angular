@@ -1,6 +1,5 @@
 angular.module('app')
 .directive('boxPlotChart', function($compile){
-    var chart = d3.custom.boxPlotMan();
     return {
         restrict: 'E',
         replace: true,
@@ -13,6 +12,8 @@ angular.module('app')
             // title: '@title'
         },
         link: function(scope, element, attrs) {
+            var chartEl = d3.select(element[0]);
+
             var chart = d3.custom.boxPlot()
                         .whiskers(iqr(1.5))
                         // .quartiles([850,930,980])
@@ -47,7 +48,7 @@ angular.module('app')
             //   .attr("transform", "translate(" + scope.margin.left + "," + scope.margin.top + ")")
             //   .call(chart);
 
-            var svg = d3.select("body").append("svg")
+            var svg = d3.select(element[0]).append('svg')
                 .attr("width", scope.width + scope.margin.left + scope.margin.right)
                 .attr("height", scope.height + scope.margin.top + scope.margin.bottom)
                 .attr("class", "box")    
