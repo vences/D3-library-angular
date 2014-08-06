@@ -4,7 +4,7 @@ angular.module('app')
     return {
         restrict: 'E',
         replace: true,
-        templateUrl: 'scripts/directives/chart.html',
+        template: '<div class="chart"></div>',
         scope:{
             width: '=width',
             height: '=height',
