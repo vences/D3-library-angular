@@ -893,7 +893,6 @@ d3.custom.pieChart = function module() {
       }
       
       common.makeSvg(svg, duration, width, height, margin)
-      console.log(innerRadius)
 
       var outerRadius = chartW / 2;
       var arc = d3.svg.arc()
