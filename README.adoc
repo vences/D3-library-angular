@@ -34,6 +34,8 @@ Now you can use the directive. For this go to Documentation section
 
 == Documentation
 
+the documentation is available in the https://github.com/vences/D3-library-angular/wiki[wiki]
+
 === New HTML Tag
 
 The new HTML tag create is named directives in angular (for more documentation go to https://docs.angularjs.org/guide/directive).
@@ -51,7 +53,7 @@ The new HTML tag are :
 == Todo
 
 - improve documentation : add details on the parameter receive by directives
-- correct some bugs (e.g : the chart are not destroy when you navigate in the pages)
+- correct some bugs (e.g : the chart disapear for the second time you go on the page)
 - integrate event inside this library
 - integrate multiple plots on the same chart
 - integrate more control parameterizable
