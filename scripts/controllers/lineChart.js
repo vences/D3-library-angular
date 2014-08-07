@@ -2,7 +2,7 @@ angular.module('app')
 .controller('lineChartController', function ($scope, $location) {
   $scope.options = {
     width: 500, 
-    height: undefined,
+    height: 500,
     margin: {top: 30, right: 50, bottom: 700, left: 50}
   };
   $scope.data = [1, 4, 1, 0];

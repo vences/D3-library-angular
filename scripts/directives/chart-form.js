@@ -3,6 +3,7 @@ angular.module('app')
     return {
         restrict: 'E',
         templateUrl: 'scripts/directives/chart-form.html',
+        scope: true,
         controller: function AppCtrl ($scope) {
             $scope.update = function(d, i){ $scope.data = randomData(); };
             function randomData(){
