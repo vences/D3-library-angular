@@ -53,8 +53,19 @@ The new HTML tag are :
 == Todo
 
 - improve documentation : add details on the parameter receive by directives
-- correct some bugs (e.g : the chart disapear for the second time you go on the page)
 - integrate event inside this library
 - integrate multiple plots on the same chart
 - integrate more control parameterizable
 - add zoom and use http://square.github.io/crossfilter/[crossfilter] exploring large multivariate
+
+== Contribute
+
+* Fork
+* Make the fix
+* Submit a _pull request_
+
+https://help.github.com/articles/fork-a-repo
+
+=== update gh_pages
+
+git subtree push --prefix public origin gh-pages`
