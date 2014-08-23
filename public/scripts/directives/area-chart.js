@@ -1,6 +1,5 @@
 angular.module('app')
 .directive('areaChart', function($compile){
-    var chart = d3.custom.areaChart();
     return {
         restrict: 'E',
         replace: true,
@@ -13,6 +12,8 @@ angular.module('app')
             title: '@title'
         },
         link: function(scope, element, attrs) {
+            var chart = d3.custom.areaChart();
+            
             var chartEl = d3.select(element[0]);
             chart.on('customHover', function(d, i){
                 scope.hovered({args:d});

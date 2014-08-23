@@ -1,6 +1,5 @@
 angular.module('app')
 .directive('pieChart', function($compile){
-    var chart = d3.custom.pieChart();
     return {
         restrict: 'E',
         replace: true,
@@ -14,6 +13,8 @@ angular.module('app')
             innerRadius: '@radius'
         },
         link: function(scope, element, attrs) {
+            var chart = d3.custom.pieChart();
+            
             var chartEl = d3.select(element[0]);
             chart.on('customHover', function(d, i){
                 scope.hovered({args:d});

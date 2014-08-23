@@ -1,6 +1,5 @@
 angular.module('app')
 .directive('plotChart', function($compile){
-    var chart = d3.custom.plotChart();
     return {
         restrict: 'E',
         replace: true,
@@ -12,6 +11,8 @@ angular.module('app')
             title: '@title'
         },
         link: function(scope, element, attrs) {
+            var chart = d3.custom.plotChart();
+            
             var chartEl = d3.select(element[0]);
 
             scope.$watch('data', function (newVal, oldVal) {
