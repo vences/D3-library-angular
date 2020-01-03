@@ -4,7 +4,7 @@
   "description": "Create a library D3 integrated in angular.js",
   "main": "server.js",
   "dependencies": {
-    "hapi": "^6.2.1"
+    "hapi": ">=11.0.0"
   },
   "devDependencies": {},
   "scripts": {
